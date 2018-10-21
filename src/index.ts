@@ -11,7 +11,7 @@ const typeDefs = `
 
 const resolvers = {
     Query: {
-        hello: (_, { name }) => `Hello ${name || 'World'}`
+        hello: (_: any, { name }: any) => `Hello ${name || 'World'}`
     }
 };
 
